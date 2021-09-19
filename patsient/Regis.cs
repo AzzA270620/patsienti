@@ -11,7 +11,7 @@ using System.Windows.Forms;
 namespace patsient
 {  
     public partial class Regis : Form
-    { 
+    {  
         public Regis()
         {
             InitializeComponent();

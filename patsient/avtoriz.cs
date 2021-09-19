@@ -16,7 +16,7 @@ namespace patsient
         {
             InitializeComponent();
         }      
-               
+                
         private void Ok_Click(object sender, EventArgs e)
         {
             
