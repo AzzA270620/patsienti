@@ -1,6 +1,6 @@
 ﻿namespace patsient
 {
-    partial class Form1
+    partial class PatientCrt
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -29,6 +29,15 @@
         private void InitializeComponent()
         {
             this.PatientCart = new System.Windows.Forms.DataGridView();
+            this.id_p = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.full_name_p = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Sex_p = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Age_p = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diagnos_p = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Entrance_p = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Specialls_p = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ward_p = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.others_p = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -42,15 +51,6 @@
             this.New = new System.Windows.Forms.Button();
             this.Edit = new System.Windows.Forms.Button();
             this.id = new System.Windows.Forms.TextBox();
-            this.id_p = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.full_name_p = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Sex_p = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Age_p = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.diagnos_p = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Entrance_p = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Specialls_p = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ward_p = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.others_p = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.full_name = new System.Windows.Forms.TextBox();
             this.Sex = new System.Windows.Forms.TextBox();
             this.Age = new System.Windows.Forms.TextBox();
@@ -80,6 +80,51 @@
             this.PatientCart.RowTemplate.Height = 28;
             this.PatientCart.Size = new System.Drawing.Size(947, 182);
             this.PatientCart.TabIndex = 0;
+            // 
+            // id_p
+            // 
+            this.id_p.HeaderText = "id";
+            this.id_p.Name = "id_p";
+            // 
+            // full_name_p
+            // 
+            this.full_name_p.HeaderText = "full_name";
+            this.full_name_p.Name = "full_name_p";
+            // 
+            // Sex_p
+            // 
+            this.Sex_p.HeaderText = "Sex";
+            this.Sex_p.Name = "Sex_p";
+            // 
+            // Age_p
+            // 
+            this.Age_p.HeaderText = "Age";
+            this.Age_p.Name = "Age_p";
+            // 
+            // diagnos_p
+            // 
+            this.diagnos_p.HeaderText = "diagnos";
+            this.diagnos_p.Name = "diagnos_p";
+            // 
+            // Entrance_p
+            // 
+            this.Entrance_p.HeaderText = "Entrance";
+            this.Entrance_p.Name = "Entrance_p";
+            // 
+            // Specialls_p
+            // 
+            this.Specialls_p.HeaderText = "Specialls";
+            this.Specialls_p.Name = "Specialls_p";
+            // 
+            // Ward_p
+            // 
+            this.Ward_p.HeaderText = "Ward";
+            this.Ward_p.Name = "Ward_p";
+            // 
+            // others_p
+            // 
+            this.others_p.HeaderText = "others";
+            this.others_p.Name = "others_p";
             // 
             // label1
             // 
@@ -179,6 +224,7 @@
             this.New.TabIndex = 11;
             this.New.Text = "New";
             this.New.UseVisualStyleBackColor = true;
+            this.New.Click += new System.EventHandler(this.New_Click);
             // 
             // Edit
             // 
@@ -195,51 +241,6 @@
             this.id.Name = "id";
             this.id.Size = new System.Drawing.Size(194, 26);
             this.id.TabIndex = 13;
-            // 
-            // id_p
-            // 
-            this.id_p.HeaderText = "id";
-            this.id_p.Name = "id_p";
-            // 
-            // full_name_p
-            // 
-            this.full_name_p.HeaderText = "full_name";
-            this.full_name_p.Name = "full_name_p";
-            // 
-            // Sex_p
-            // 
-            this.Sex_p.HeaderText = "Sex";
-            this.Sex_p.Name = "Sex_p";
-            // 
-            // Age_p
-            // 
-            this.Age_p.HeaderText = "Age";
-            this.Age_p.Name = "Age_p";
-            // 
-            // diagnos_p
-            // 
-            this.diagnos_p.HeaderText = "diagnos";
-            this.diagnos_p.Name = "diagnos_p";
-            // 
-            // Entrance_p
-            // 
-            this.Entrance_p.HeaderText = "Entrance";
-            this.Entrance_p.Name = "Entrance_p";
-            // 
-            // Specialls_p
-            // 
-            this.Specialls_p.HeaderText = "Specialls";
-            this.Specialls_p.Name = "Specialls_p";
-            // 
-            // Ward_p
-            // 
-            this.Ward_p.HeaderText = "Ward";
-            this.Ward_p.Name = "Ward_p";
-            // 
-            // others_p
-            // 
-            this.others_p.HeaderText = "others";
-            this.others_p.Name = "others_p";
             // 
             // full_name
             // 
@@ -299,7 +300,7 @@
             this.others.Size = new System.Drawing.Size(194, 26);
             this.others.TabIndex = 21;
             // 
-            // Form1
+            // PatientCrt
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -326,7 +327,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.PatientCart);
-            this.Name = "Form1";
+            this.Name = "PatientCrt";
             this.Text = "PasientCart";
             ((System.ComponentModel.ISupportInitialize)(this.PatientCart)).EndInit();
             this.ResumeLayout(false);

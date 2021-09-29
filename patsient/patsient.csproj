@@ -52,11 +52,29 @@
     <Compile Include="avtoriz.Designer.cs">
       <DependentUpon>avtoriz.cs</DependentUpon>
     </Compile>
-    <Compile Include="Form1.cs">
+    <Compile Include="Clinica.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Clinica.Designer.cs">
+      <DependentUpon>Clinica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="diagnos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="diagnos.Designer.cs">
+      <DependentUpon>diagnos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientCrt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientCrt.Designer.cs">
+      <DependentUpon>PatientCrt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PatientsDischange.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PatientsDischange.Designer.cs">
+      <DependentUpon>PatientsDischange.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -66,11 +84,32 @@
     <Compile Include="Regis.Designer.cs">
       <DependentUpon>Regis.cs</DependentUpon>
     </Compile>
+    <Compile Include="transfer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="transfer.Designer.cs">
+      <DependentUpon>transfer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Wards.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Wards.Designer.cs">
+      <DependentUpon>Wards.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="avtoriz.resx">
       <DependentUpon>avtoriz.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Clinica.resx">
+      <DependentUpon>Clinica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="diagnos.resx">
+      <DependentUpon>diagnos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientCrt.resx">
+      <DependentUpon>PatientCrt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PatientsDischange.resx">
+      <DependentUpon>PatientsDischange.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -83,6 +122,12 @@
     </Compile>
     <EmbeddedResource Include="Regis.resx">
       <DependentUpon>Regis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="transfer.resx">
+      <DependentUpon>transfer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Wards.resx">
+      <DependentUpon>Wards.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

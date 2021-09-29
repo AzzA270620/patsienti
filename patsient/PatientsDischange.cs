@@ -9,12 +9,17 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace patsient
-{ 
-    public partial class Form1 : Form
-    {  
-        public Form1() 
+{
+    public partial class PatientsDischange : Form
+    {
+        public PatientsDischange()
         {
             InitializeComponent();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
