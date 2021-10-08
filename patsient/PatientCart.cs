@@ -23,27 +23,16 @@ namespace patsient
       
             public PatientCart()
             {
-                this.Patientid = 0;
-               this.PatientFull_name=" ";
-       this.PatientAge;
-        private string PatientSex;
-        private diagnos diagnoz;
-        private string PatientEntrance;
-        private int PatientHeight;
-        private string patientSpesialls;
-        private Wards ward;
+        this.Patientid = 0;
+        this.PatientFull_name=" ";
+       this.PatientAge=0;
+     this.PatientSex=" ";
+      this.diagnoz=new diagnos();
+      this.PatientEntrance=" ";
+       this.PatientHeight=0;
+       this.patientSpesialls=" ";
+       this.ward=new Wards();
+            this.others = "";
     }
-
-            //конструктор
-            public Man(int h, int w)
-            {
-                this.height = h;
-                this.weight = w;
-            }
-            public string PrintMan()
-            {
-                return ("Рост Пети-мужика - " + h.ToString() + "см. Его вес - " + w.ToString() + "кг");
-            }
-
-        }
+     
 }
