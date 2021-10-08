@@ -12,6 +12,8 @@ namespace patsient
 { 
     public partial class PatientCrt : Form
     {  
+
+
         public PatientCrt() 
         {
             InitializeComponent();
