@@ -1,6 +1,6 @@
 ﻿namespace patsient
 {
-    partial class PatientCrt
+    partial class PatientCart
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.PatientCart = new System.Windows.Forms.DataGridView();
+            this.PatientCt = new System.Windows.Forms.DataGridView();
             this.id_p = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.full_name_p = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Sex_p = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -59,13 +59,13 @@
             this.Entrance = new System.Windows.Forms.TextBox();
             this.Specialls = new System.Windows.Forms.TextBox();
             this.others = new System.Windows.Forms.TextBox();
-            ((System.ComponentModel.ISupportInitialize)(this.PatientCart)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PatientCt)).BeginInit();
             this.SuspendLayout();
             // 
-            // PatientCart
+            // PatientCt
             // 
-            this.PatientCart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.PatientCart.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.PatientCt.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.PatientCt.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.id_p,
             this.full_name_p,
             this.Sex_p,
@@ -75,11 +75,11 @@
             this.Specialls_p,
             this.Ward_p,
             this.others_p});
-            this.PatientCart.Location = new System.Drawing.Point(12, 24);
-            this.PatientCart.Name = "PatientCart";
-            this.PatientCart.RowTemplate.Height = 28;
-            this.PatientCart.Size = new System.Drawing.Size(947, 182);
-            this.PatientCart.TabIndex = 0;
+            this.PatientCt.Location = new System.Drawing.Point(12, 24);
+            this.PatientCt.Name = "PatientCt";
+            this.PatientCt.RowTemplate.Height = 28;
+            this.PatientCt.Size = new System.Drawing.Size(947, 182);
+            this.PatientCt.TabIndex = 0;
             // 
             // id_p
             // 
@@ -300,7 +300,7 @@
             this.others.Size = new System.Drawing.Size(194, 26);
             this.others.TabIndex = 21;
             // 
-            // PatientCrt
+            // PatientCart
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -326,10 +326,11 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.PatientCart);
-            this.Name = "PatientCrt";
+            this.Controls.Add(this.PatientCt);
+            this.Name = "PatientCart";
             this.Text = "PasientCart";
-            ((System.ComponentModel.ISupportInitialize)(this.PatientCart)).EndInit();
+            this.Load += new System.EventHandler(this.PatientCart_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.PatientCt)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -337,7 +338,7 @@
 
         #endregion
 
-        private System.Windows.Forms.DataGridView PatientCart;
+        private System.Windows.Forms.DataGridView PatientCt;
         private System.Windows.Forms.DataGridViewTextBoxColumn id_p;
         private System.Windows.Forms.DataGridViewTextBoxColumn full_name_p;
         private System.Windows.Forms.DataGridViewTextBoxColumn Sex_p;

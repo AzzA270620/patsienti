@@ -16,7 +16,7 @@ namespace patsient
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new PatientCrt());
+            Application.Run(new PatientCart());
         }
     }
 }

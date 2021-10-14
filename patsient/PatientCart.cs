@@ -1,15 +1,19 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace patsient
-{
-    class PatientCart
+{ 
+    public partial class PatientCart : Form
     {
-            private int Patientid; 
-            private string PatientFull_name;
+        private int Patientid;
+        private string PatientFull_name;
         private int PatientAge;
         private string PatientSex;
         private diagnos diagnoz;
@@ -17,12 +21,15 @@ namespace patsient
         private int PatientHeight;
         private string patientSpesialls;
         private Wards ward;
-        private string others;
+        private string othrs;
+       
 
-        //свойство рост
-      
-            public PatientCart()
-            {
+        public PatientCart()
+        {
+            this.Patientid = 0;
+            this.PatientFull_name = " ";
+            this.PatientAge = 0;
+       
         this.Patientid = 0;
         this.PatientFull_name=" ";
        this.PatientAge=0;
@@ -32,7 +39,20 @@ namespace patsient
        this.PatientHeight=0;
        this.patientSpesialls=" ";
        this.ward=new Wards();
-            this.others = "";
+            this.othrs = " ";
     }
-     
+
+
+
+
+        private void New_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PatientCart_Load(object sender, EventArgs e)
+        {
+
+        }
+    }
 }
