@@ -1,6 +1,6 @@
 ﻿namespace patsient
 {
-    partial class PatientCart
+    partial class V_PatientCart
     {
         /// <summary>
         /// Обязательная переменная конструктора.

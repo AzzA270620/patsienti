@@ -64,11 +64,11 @@
     <Compile Include="diagnos.Designer.cs">
       <DependentUpon>diagnos.cs</DependentUpon>
     </Compile>
-    <Compile Include="PatientCart.cs">
+    <Compile Include="V_PatientCart.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PatientCrt.Designer.cs">
-      <DependentUpon>PatientCart.cs</DependentUpon>
+    <Compile Include="V_PatientCart.Designer.cs">
+      <DependentUpon>V_PatientCart.cs</DependentUpon>
     </Compile>
     <Compile Include="PatientsDischange.cs">
       <SubType>Form</SubType>
@@ -106,7 +106,7 @@
       <DependentUpon>diagnos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PatientCrt.resx">
-      <DependentUpon>PatientCart.cs</DependentUpon>
+      <DependentUpon>V_PatientCart.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PatientsDischange.resx">
       <DependentUpon>PatientsDischange.cs</DependentUpon>

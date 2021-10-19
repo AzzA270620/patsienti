@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace patsient
 { 
-    public partial class PatientCart : Form
+    public partial class V_PatientCart : Form
     {
         private int Patientid;
         private string PatientFull_name;
@@ -24,7 +24,7 @@ namespace patsient
         private string othrs;
        
 
-        public PatientCart()
+        public V_PatientCart()
         {
             this.Patientid = 0;
             this.PatientFull_name = " ";
